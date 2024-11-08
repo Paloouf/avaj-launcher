@@ -1,2 +1,4 @@
-javac src/Simulator.java  # Compiles to MyProgram.class
-java src.Simulator simulator.txt 
+find . -name "*.class" -delete
+find -name *.java > sources.txt
+javac @sources.txt
+java -cp . src.Simulator scenario.txt 
